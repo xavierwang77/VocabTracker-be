@@ -3,6 +3,7 @@ import logging
 import sys
 from loguru import logger
 
+
 class InterceptHandler(logging.Handler):
     def emit(self, record):
         # 获取 Loguru 日志等级对应

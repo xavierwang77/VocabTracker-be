@@ -1,4 +1,5 @@
 # app/main.py
+from contextlib import asynccontextmanager
 from fastapi import FastAPI, Depends
 from sqlalchemy.orm import Session
 from sqlalchemy import text
@@ -6,23 +7,16 @@ from loguru import logger
 
 from app.db import get_db, init_db, check_db_connection
 from app.core.config import settings
+from app.api import vocabulary
 
 
-# 创建FastAPI应用实例
-app = FastAPI(
-    title=settings.app_name,
-    description="词汇量追踪器后端API",
-    version="1.0.0",
-    debug=settings.debug
-)
-
-
-@app.on_event("startup")
-async def startup_event():
+@asynccontextmanager
+async def lifespan(app: FastAPI):
     """
-    应用启动事件
-    检查数据库连接并初始化数据库
+    应用生命周期管理
+    处理启动和关闭事件
     """
+    # 启动事件
     logger.info("正在启动应用...")
     
     # 检查数据库连接
@@ -33,16 +27,33 @@ async def startup_event():
     else:
         logger.error("数据库连接失败，请检查数据库配置")
         raise Exception("数据库连接失败")
+
+    # 打印所有注册的 API 路由
+    logger.info("已注册的 API 路由列表：")
+    for route in app.routes:
+        if hasattr(route, "methods") and hasattr(route, "path"):
+            methods = ",".join(route.methods)
+            logger.info(f"{methods:<10} {route.path}")
     
     logger.info("应用启动完成")
-
-
-@app.on_event("shutdown")
-async def shutdown_event():
-    """
-    应用关闭事件
-    """
+    
+    yield
+    
+    # 关闭事件
     logger.info("应用正在关闭...")
+
+
+# 创建FastAPI应用实例
+app = FastAPI(
+    title=settings.app_name,
+    description="词汇量追踪器后端API",
+    version="1.0.0",
+    debug=settings.debug,
+    lifespan=lifespan
+)
+
+# 注册API路由
+app.include_router(vocabulary.router, prefix="/api")
 
 
 @app.get("/")

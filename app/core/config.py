@@ -1,5 +1,4 @@
 from pydantic_settings import BaseSettings
-from typing import ClassVar
 
 
 class Settings(BaseSettings):
@@ -13,9 +12,6 @@ class Settings(BaseSettings):
     database_user: str = "postgres"
     database_password: str = "xwCoder4Ever!"
     database_name: str = "postgres"
-
-    LOG_FORMAT: ClassVar[str] = "[%(levelname)s] %(asctime)s - %(message)s\n%(pathname)s:%(lineno)d"
-    DATE_FORMAT: ClassVar[str] = "%Y-%m-%d %H:%M:%S"
     
     # 数据库URL
     @property
