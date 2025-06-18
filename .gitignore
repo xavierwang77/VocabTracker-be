@@ -6,3 +6,5 @@ logs
 .venv
 datasets
 .env.*
+
+__pycache__

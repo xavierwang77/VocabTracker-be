@@ -52,7 +52,7 @@ def init_db() -> None:
     """
     try:
         # 导入所有模型以确保它们被注册到Base.metadata
-        # from app.models import *  # 当有模型时取消注释
+        from app.models import CET4Vocabulary, CET6Vocabulary, KaoyanVocabulary, Level4Vocabulary, Level8Vocabulary, TABLE_MODEL_MAPPING
         
         # 创建所有表
         Base.metadata.create_all(bind=engine)
