@@ -1,13 +1,12 @@
+# app/main.py
 from fastapi import FastAPI, Depends
 from sqlalchemy.orm import Session
-import logging
+from sqlalchemy import text
+from loguru import logger
 
 from app.db import get_db, init_db, check_db_connection
 from app.core.config import settings
 
-# 配置日志
-logging.basicConfig(level=logging.INFO)
-logger = logging.getLogger(__name__)
 
 # 创建FastAPI应用实例
 app = FastAPI(
@@ -67,7 +66,7 @@ async def health_check(db: Session = Depends(get_db)):
     """
     try:
         # 执行简单的数据库查询来验证连接
-        db.execute("SELECT 1")
+        db.execute(text("SELECT 1"))
         return {
             "status": "healthy",
             "database": "connected",

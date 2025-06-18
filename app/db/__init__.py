@@ -2,13 +2,10 @@ from sqlalchemy import create_engine, text
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker, Session
 from typing import Generator
-import logging
+from loguru import logger
 
 from app.core.config import settings
 
-# 配置日志
-logging.basicConfig(level=logging.INFO)
-logger = logging.getLogger(__name__)
 
 # 创建数据库引擎
 engine = create_engine(
