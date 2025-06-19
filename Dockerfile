@@ -24,5 +24,8 @@ RUN pip install --upgrade pip && \
 # 拷贝项目代码
 COPY . .
 
+# 暴露必要的端口（如有需要）
+EXPOSE 9163
+
 # 设置默认启动命令
 CMD ["python", "run.py"]
