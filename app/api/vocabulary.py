@@ -5,6 +5,11 @@ from typing import List, Dict, Any
 from pydantic import BaseModel
 
 from app.db import get_db
+from app.service.vocabulary_service import (
+    VocabularyEstimateService,
+    VocabularyEstimateRequest,
+    VocabularyEstimateResponse
+)
 from app.models.vocabulary import (
     CET4Vocabulary,
     CET6Vocabulary, 
@@ -180,4 +185,31 @@ async def get_vocabulary_stats(db: Session = Depends(get_db)):
         raise HTTPException(
             status_code=500,
             detail=f"获取词汇统计失败: {str(e)}"
+        )
+
+
+@router.post("/estimate", response_model=VocabularyEstimateResponse)
+async def estimate_vocabulary(
+    request: VocabularyEstimateRequest
+):
+    """
+    估算用户词汇量
+    
+    根据用户在各个词汇集中的测试表现，估算用户的总词汇量
+    
+    Args:
+        request: 包含各词汇集测试结果的请求体
+        
+    Returns:
+        词汇量估算结果，包括总词汇量、详细分析和学习建议
+    """
+    try:
+        # 调用服务层进行词汇量估算
+        result = VocabularyEstimateService.estimate_vocabulary(request)
+        return result
+        
+    except Exception as e:
+        raise HTTPException(
+            status_code=500,
+            detail=f"词汇量估算失败: {str(e)}"
         )
