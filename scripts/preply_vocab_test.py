@@ -68,7 +68,6 @@ class VocabTestScraper:
             '_ga': 'GA1.1.301526963.1750734002',
             'hj_first_visit_30days': '2025-06-24T03:00:01.832Z',
             'eu_cookie_policy': 'yes',
-            '_hjSession_641144': 'eyJpZCI6IjAxZWZkNWVhLTg1MzMtNDg0ZC05OGVjLWZiMzNmOTkyZDFkYyIsImMiOjE3NTA3MzQwMDU1NzcsInMiOjAsInIiOjAsInNiIjowLCJzciI6MCwic2UiOjAsImZzIjoxLCJzcCI6MH0=',
             '_clck': '7s8otm%7C2%7Cfx1%7C0%7C2001',
             'hubspotutk': '3d687f7dedec35188d1a23bf24f47423',
             '_fbp': 'fb.1.1750734007977.971242542358675962',
@@ -78,19 +77,20 @@ class VocabTestScraper:
             '__hssrc': '1',
             'source_page_last': '',
             'landing_page_last': 'https://preply.com/en/learn/english/test-your-vocab',
-            '__hstc': '115815577.3d687f7dedec35188d1a23bf24f47423.1750734007345.1750740533417.1750745780803.4',
-            '__hssc': '115815577.5.1750745780803',
-            'visit_time_last': '2025-06-24T06:22:01.155Z',
-            'pv_count': '27',
-            '_ga_BQH4D3BLSB': 'GS2.1.s1750745760$o3$g1$t1750746121$j50$l0$h0',
+            '__hstc': '115815577.3d687f7dedec35188d1a23bf24f47423.1750734007345.1750745780803.1750754267693.5',
+            '_hjSession_641144': 'eyJpZCI6ImM1ZjNkZjYxLTQxMDEtNDk1Ni04ZmVlLTI5ZWI3YmNjMzc4YyIsImMiOjE3NTA3NTQyNjkzMDksInMiOjAsInIiOjAsInNiIjowLCJzciI6MCwic2UiOjAsImZzIjowLCJzcCI6MH0=',
+            'visit_time_last': '2025-06-24T08:49:29.897Z',
+            'pv_count': '34',
+            'ttcsid': '1750754265813::-n0fPwgp8kRTrDvK77YY.4.1750754971384',
             '_uetsid': '53f63bb050a711f095bf27f3078b7844',
             '_uetvid': '53f676d050a711f0ad38032b5eaa9584',
-            'ttcsid': '1750745775924::uQTIt5svN5eow7qJEvOP.3.1750746122318',
-            'ttcsid_C525UPO00UN7QUNERGG0': '1750745775924::YGK_ql7mG8ZQGjnum7Q-.2.1750746122529',
-            '_clsk': '1pz4jg3%7C1750746123623%7C6%7C0%7Cl.clarity.ms%2Fcollect',
-            '__cf_bm': '9._QgCYfEG994klcHlPsvHCfDSxxW.nm7CLQ8H5AWOg-1750746140-1.0.1.1-eCPsIPzHd2DanQatUAISdo0zQoQ_2UU3cH_V4dN9d4xr8EDRsBWZl342io8xLwdtqjoSPrNAp0WWaqbCkr6FRAwZJYMsKJvr0jOstIcYQ2Y',
-            '_cfuvid': 'MwpC2rE6JO34VaGvLz9_bTRZgzAPZQ6Pb5eKMfhvlho-1750746140314-0.0.1.1-604800000',
-            'cf_clearance': 'YVh9QGXibIRVAvm9MHrs56nqtwOtlOEkZ4d2cGYwWWE-1750746147-1.2.1.1-Rm7rSWY.ywiIZQy_UQPNeMN.0F4yjsfVeZr8WwyE9VqTKgl_xY_iv2S_aCw.oqO58azfmkwWdHTgRRRBdtFc6iwl2nt0xxGLiTaEp6kmazVetAoXUNE4qANzQIlcFHpE1vZRjwpR8uECOLyopIkb_xYrbiFyGuD9.dSxzJ2VxITpoenWqyNBGOMkuvxB1rcGuqN0w67o15zvt9_CZVTzdoriKa1ekFP1wABjs.J7zincInrvrEwZIbCJL1raFRDr_1qw2qh9QdFIf1OxmJmXniy0rJ9w8JMAZcY1iw6Hatp5tNpnGhsiHwcYtVEB3xl81DkAIWZFvDfokNimNLaN29KsSGA5x2Ax8VIniRuXWtIFsFgVO4EomBJTfNRuCSEW',
+            'ttcsid_C525UPO00UN7QUNERGG0': '1750754250552::cz_blrU3ndJGompzQkVO.3.1750754971633',
+            '__hssc': '115815577.4.1750754267693',
+            '__cf_bm': 'tEkKF9U4UaAkhmu97gtUSGdra94SDhxhTorb44d3koM-1750754974-1.0.1.1-6HmaxHXchDw5LpdasGEpjH3MItWSdJnKWWY0qM_EZsBmdlaiFClgiTGmvZ_ojj3aKTMgx8hGnibxsQrsQguvduPe8jLYb_SAMsOz5DNl4ts',
+            '_clsk': '5vy4vz%7C1750754974178%7C3%7C0%7Cj.clarity.ms%2Fcollect',
+            '_ga_BQH4D3BLSB': 'GS2.1.s1750754251$o4$g1$t1750754975$j43$l0$h0',
+            '_cfuvid': 'jF85CR_JX0Nsq6SyL6uF7_TYeMN5m1UND0z2asNQ9aY-1750754976080-0.0.1.1-604800000',
+            'cf_clearance': 'I9nnGdj9vOE3Tc_EiwDJTsntsK7TxxLqzmAgCNcWnMQ-1750754984-1.2.1.1-_vkw7RAfMvetw12aP1YsmVxLBNWG1EZEztZcWmb1GURXmd4TpC6Df1eRhjvhgmY1yjzq8bDsS5TpBJxjnj88vjp4peS6OBaY9P9j9r5SnLy0EA7PVaxFyJ2vwvo09PhmiMpA2r_cVAK84CQDNV15n9lcD3d7TgsbILGmJWC57OKnlDBG7Yll4xR5MgGKaMGL8XY_5ktWMVywte4JlmiDuSpokrb7bYPzoO.vfhf6_oX8nu_0RbPf6rAa6CabWhFTwxDUOv_6nAJMQR1tBRIVcyF5YlY5rvIWNbd0KzmH4b.eZa5Ysbe4FwCRHwKN7Gq3ilc9Nd_lOGD4.XOjTY2kWv1nDim2sFXgXrCsXoLx.52SAIKu.20b9pVhmEH9F4O_',
         }
 
         
@@ -521,7 +521,7 @@ class VocabTestScraper:
             # 保存JSON结果到文件
             try:
                 # 创建结果目录（如果不存在）
-                results_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'results')
+                results_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'preply_results')
                 os.makedirs(results_dir, exist_ok=True)
                 
                 # 生成文件名（包含时间戳）
