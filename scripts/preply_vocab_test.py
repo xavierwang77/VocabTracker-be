@@ -15,8 +15,7 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.common.exceptions import TimeoutException, NoSuchElementException, WebDriverException
+from selenium.common.exceptions import TimeoutException, NoSuchElementException
 from webdriver_manager.chrome import ChromeDriverManager
 import logging
 
@@ -72,25 +71,24 @@ class VocabTestScraper:
             'hubspotutk': '3d687f7dedec35188d1a23bf24f47423',
             '_fbp': 'fb.1.1750734007977.971242542358675962',
             '_hjSessionUser_641144': 'eyJpZCI6IjU1NTljOTcyLTQxYjQtNTYyZC1iMmUxLWE3NGFmZDc2OTRhOSIsImNyZWF0ZWQiOjE3NTA3MzQwMDU1NzcsImV4aXN0aW5nIjp0cnVlfQ==',
-            'currency_code': 'AUD',
-            '_hjHasCachedUserAttributes': 'true',
-            '__hssrc': '1',
             'source_page_last': '',
             'landing_page_last': 'https://preply.com/en/learn/english/test-your-vocab',
-            '__hstc': '115815577.3d687f7dedec35188d1a23bf24f47423.1750734007345.1750745780803.1750754267693.5',
-            '_hjSession_641144': 'eyJpZCI6ImM1ZjNkZjYxLTQxMDEtNDk1Ni04ZmVlLTI5ZWI3YmNjMzc4YyIsImMiOjE3NTA3NTQyNjkzMDksInMiOjAsInIiOjAsInNiIjowLCJzciI6MCwic2UiOjAsImZzIjowLCJzcCI6MH0=',
             'visit_time_last': '2025-06-24T08:49:29.897Z',
-            'pv_count': '34',
-            'ttcsid': '1750754265813::-n0fPwgp8kRTrDvK77YY.4.1750754971384',
             '_uetsid': '53f63bb050a711f095bf27f3078b7844',
             '_uetvid': '53f676d050a711f0ad38032b5eaa9584',
-            'ttcsid_C525UPO00UN7QUNERGG0': '1750754250552::cz_blrU3ndJGompzQkVO.3.1750754971633',
-            '__hssc': '115815577.4.1750754267693',
-            '__cf_bm': 'tEkKF9U4UaAkhmu97gtUSGdra94SDhxhTorb44d3koM-1750754974-1.0.1.1-6HmaxHXchDw5LpdasGEpjH3MItWSdJnKWWY0qM_EZsBmdlaiFClgiTGmvZ_ojj3aKTMgx8hGnibxsQrsQguvduPe8jLYb_SAMsOz5DNl4ts',
-            '_clsk': '5vy4vz%7C1750754974178%7C3%7C0%7Cj.clarity.ms%2Fcollect',
-            '_ga_BQH4D3BLSB': 'GS2.1.s1750754251$o4$g1$t1750754975$j43$l0$h0',
-            '_cfuvid': 'jF85CR_JX0Nsq6SyL6uF7_TYeMN5m1UND0z2asNQ9aY-1750754976080-0.0.1.1-604800000',
-            'cf_clearance': 'I9nnGdj9vOE3Tc_EiwDJTsntsK7TxxLqzmAgCNcWnMQ-1750754984-1.2.1.1-_vkw7RAfMvetw12aP1YsmVxLBNWG1EZEztZcWmb1GURXmd4TpC6Df1eRhjvhgmY1yjzq8bDsS5TpBJxjnj88vjp4peS6OBaY9P9j9r5SnLy0EA7PVaxFyJ2vwvo09PhmiMpA2r_cVAK84CQDNV15n9lcD3d7TgsbILGmJWC57OKnlDBG7Yll4xR5MgGKaMGL8XY_5ktWMVywte4JlmiDuSpokrb7bYPzoO.vfhf6_oX8nu_0RbPf6rAa6CabWhFTwxDUOv_6nAJMQR1tBRIVcyF5YlY5rvIWNbd0KzmH4b.eZa5Ysbe4FwCRHwKN7Gq3ilc9Nd_lOGD4.XOjTY2kWv1nDim2sFXgXrCsXoLx.52SAIKu.20b9pVhmEH9F4O_',
+            '_clsk': '5vy4vz%7C1750754991418%7C4%7C0%7Cj.clarity.ms%2Fcollect',
+            '__cf_bm': 'z5eevT1CGTl0MbgUMFRhWez9Ex6Kx7gDfcidYFf.3Dw-1750830797-1.0.1.1-Wx8L69LnakzBRmNm8zT9L6_Q.UPUehx16rGquPeQmQRacYGBez.hn74_v4JE.zPc3.q71WwQnGz.bDbRWdIUt8Uo9vRII3l6.gIDlMJHxNM',
+            '_cfuvid': 'H2REnzOpNI1sN0iF08mcYhKJxMSVZzB73MjwEKX1zAM-1750830842060-0.0.1.1-604800000',
+            'cf_clearance': 'YnaoD6EZ68MJduOH5Dj5FALyy9f5QTH95P2UX0SGLTE-1750830853-1.2.1.1-lrnlaoROqFE85J9oFcHKNIwB82vU2VOI5xQ.1TgxnjBsMVAxy2wZ1dnHBEIcyHVKI9WJ7xbsJau8koc9TJ.QlYfPzdqZHtLaT_A_cfk3ZoIjMmxtjjfR_MyYJadohRFdcEGuTsstYz5URyIQ5Qm2lVYg3M0et.Ur9jroZKIE0bvLlRfXwWBFt4J71rf4g9vDJpIXHheaxKMdMcGqcYdn7r744zbRtL2sXBmFaRvKS4c0HyctR99eez2JR7uxwHbIOpjTLovBt2YByVVTsecZnPiQKmQPg2BMypyMLUYI0LDYeRDrOMkF1xRGL2bl.pEXtIuM623oxBE3.h2oDCwiDishTPvHYEyYtBg5kr0hhfIKD4vpBgxUtQKuoTMDJ89h',
+            'currency_code': 'USD',
+            'exp_local_currencies_eligible': 'true',
+            'pv_count': '1',
+            'ttcsid': '1750830860604::X8_pAN_Mt6Af2fC6m4TB.5.1750830860604',
+            'ttcsid_C525UPO00UN7QUNERGG0': '1750830860604::DTypdGoljAm48s53oECk.4.1750830861276',
+            '__hstc': '115815577.3d687f7dedec35188d1a23bf24f47423.1750734007345.1750754267693.1750830862530.6',
+            '__hssrc': '1',
+            '__hssc': '115815577.1.1750830862530',
+            '_ga_BQH4D3BLSB': 'GS2.1.s1750830859$o5$g0$t1750830859$j60$l0$h0',
         }
 
         

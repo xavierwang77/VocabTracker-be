@@ -54,12 +54,12 @@ class VocabularyEstimateService:
             "weight": 0.25  # 在总词汇量中的权重
         },
         "level4": {
-            "total_words": 8000,  # 专四词汇总量
+            "total_words": 12000,  # 专四词汇总量
             "average_mastery": 0.5,  # 平均掌握率
             "weight": 0.15  # 在总词汇量中的权重
         },
         "level8": {
-            "total_words": 12000,  # 专八词汇总量
+            "total_words": 58000,  # 专八词汇总量
             "average_mastery": 0.4,  # 平均掌握率
             "weight": 0.15  # 在总词汇量中的权重
         }

@@ -422,7 +422,7 @@ class VocabResultAnalyzer:
             summary: 汇总报告
         """
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        report_file = project_root / f'preply_results_analysis_report_{timestamp}.json'
+        report_file = project_root / f'preply_analysis_report/preply_results_analysis_report_{timestamp}.json'
         
         report_data = {
             'summary': summary,
